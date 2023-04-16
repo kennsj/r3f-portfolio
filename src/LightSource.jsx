@@ -5,10 +5,10 @@ import { isMobile } from "react-device-detect"
 
 export default function LightSource() {
 	const [colors, setColors] = useState([
-		"orange",
+		"black",
 		"red",
 		"red",
-		"orange",
+		"hotpink",
 		"#a6d59e",
 		"#a6d59e",
 		"blue",
@@ -18,16 +18,12 @@ export default function LightSource() {
 	const light5 = useRef()
 
 	useFrame((state, delta) => {
-		easing.dampC(light.current.color, colors[5], 0.55, delta)
+		easing.dampC(light.current.color, colors[4], 0.05, delta)
 
-		easing.dampC(light5.current.color, colors[6], 0.45, delta)
+		easing.dampC(light5.current.color, colors[0], 0.05, delta)
 
 		if (isMobile) {
-			light.current.position.set(
-				-0.1,
-				-Math.sin(state.clock.getElapsedTime()) / 2,
-				1
-			)
+			light.current.position.set(-2, -Math.sin(state.clock.elapsedTime), 1)
 		} else {
 			easing.damp3(
 				light.current.position,
@@ -44,9 +40,9 @@ export default function LightSource() {
 
 	return (
 		<>
-			<directionalLight ref={light} intensity={0.4} />
+			<directionalLight ref={light} intensity={5} />
 
-			<ambientLight color={"#a6d59e"} ref={light5} intensity={10.5} />
+			<ambientLight color={"#a6d59e"} ref={light5} intensity={8.5} />
 		</>
 	)
 }

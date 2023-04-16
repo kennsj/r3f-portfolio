@@ -7,21 +7,19 @@ const fragmentShader = /* glsl */ `
 	uniform float uOffset;
 	uniform float pointerX;
 
-	void mainUv(inout vec2 uv) {
-		uv.y += sin(uv.y * uFrequency + uOffset) * uAmplitude;
-		uv.x += sin(uv.x * uFrequency + uOffset) * uAmplitude;
-	}
+    void mainUv(inout vec2 uv) {
+        uv.y += sin(uv.x * uFrequency + uOffset) * uAmplitude;
+    }
 
-	void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor) {
-		outputColor = vec4(.8, 1., .5, inputColor.a);
-	}
+    void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor) {
+      outputColor = vec4(inputColor.rgb, inputColor.a);
+    }
 `
 
 export default class WaveEffect extends Effect {
 	constructor({
 		uFrequency,
 		uAmplitude,
-		uOffset,
 		pointerX,
 		blendFunction = blendFunction.MULTIPLY,
 	}) {
@@ -30,7 +28,7 @@ export default class WaveEffect extends Effect {
 			uniforms: new Map([
 				["uFrequency", new Uniform(uFrequency)],
 				["uAmplitude", new Uniform(uAmplitude)],
-				["uOffset", new Uniform(uOffset)],
+				["uOffset", new Uniform(0)],
 				["pointerX", new Uniform(pointerX)],
 			]),
 		})

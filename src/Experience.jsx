@@ -1,74 +1,34 @@
 import { Plane, useTexture } from "@react-three/drei"
-import { useFrame, useThree } from "@react-three/fiber"
-import {
-	Bloom,
-	EffectComposer,
-	Noise,
-	Vignette,
-	HueSaturation,
-} from "@react-three/postprocessing"
-import { BlendFunction } from "postprocessing"
+import { useThree } from "@react-three/fiber"
+import Effects from "./Effects"
 import { useControls } from "leva"
-import { Perf } from "r3f-perf"
-import Wave from "./Wave"
-import { useRef, useState } from "react"
 
 function Experience() {
 	const viewport = useThree((state) => state.viewport)
 
-	const displacementMap = useTexture("./textures/template1.png")
-	const normalMap = useTexture("./textures/template2.png")
+	const displacementMap = useTexture("./textures/displacement2.png")
+	const normalMap = useTexture("./textures/normal2.png")
 
-	const waveRef = useRef()
-	const { uFrequency, uAmplitude, uMousePos } = useControls({
-		uFrequency: { value: 0.2, min: 0, max: 10 },
-		uAmplitude: { value: 3.7, min: 0, max: 10 },
-		uOffset: { value: 0.5, min: 0, max: 30 },
-	})
-
-	const [pointerX, setPointerX] = useState()
-
-	useFrame((state) => {
-		// let pointerX = setPointerX(Math.round(state.pointer.x))
+	const colors = useControls({
+		value: "green",
 	})
 
 	return (
 		<>
-			<EffectComposer>
-				<Noise premultiply blendFunction={BlendFunction.MULTIPLY} />
-				<Bloom
-					mipmapBlur
-					intensity={1.8}
-					luminanceThreshold={0.9}
-					radius={0.9}
-				/>
-				{/* <Vignette offset={0.01} darkness={0.25} eskil={true} /> */}
-
-				<Wave
-					ref={waveRef}
-					uFrequency={uFrequency}
-					uAmplitude={uAmplitude}
-					pointerX={pointerX}
-					uMousePos
-					blendFunction={BlendFunction.MULTIPLY}
-				/>
-			</EffectComposer>
-
 			<mesh>
-				<Plane scale={[viewport.width, viewport.height, 1]}>
+				<Effects />
+				<Plane scale={[viewport.width, viewport.height, 1]} args={[2, 1, 2, 2]}>
 					<meshPhysicalMaterial
 						toneMapped={false}
-						// color='#101010'
-						color={[0.2, 0.2, 0.15]}
+						color='#191919'
 						roughness={0.5}
-						metalness={0.98}
+						metalness={0.25}
 						displacementMap={displacementMap}
-						displacementScale={0.1}
+						displacementScale={0.51}
 						normalMap={normalMap}
-						normalScale={0.25}
+						normalScale={0.1}
 					/>
 				</Plane>
-				<Perf position='top-left' />
 			</mesh>
 		</>
 	)
