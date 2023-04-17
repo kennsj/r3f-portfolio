@@ -1,12 +1,13 @@
 import React, { Suspense } from "react"
 import ReactDOM from "react-dom/client"
 import Experience from "./Experience"
-import "./index.sass"
+import "./UI/index.sass"
 import { Canvas } from "@react-three/fiber"
 import { Leva } from "leva"
 import LightSource from "./LightSource"
 import Interface from "./UI/Interface"
-import SVGLogo from "./assets/kj-pictogram_white.svg"
+import SVGLogo from "./assets/logo/kj-pictogram_white.svg"
+import SVGLogo2 from "./assets/logo/kj-pictogram.svg"
 import Cursor from "./Cursor"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,7 +22,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 						src={SVGLogo}
 					/>
 				</a>
-				<div className='menu'></div>
+				<div className='menu'>
+					<img src={SVGLogo2}></img>
+				</div>
 			</nav>
 			<Leva collapsed />
 			<Canvas>

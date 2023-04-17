@@ -1,14 +1,24 @@
 import React from "react"
-import SVGLogo from "../assets/kj-pictogram_white.svg"
+import SVGLogo from "../assets/logo/kj-pictogram_white.svg"
 import { Scroll, ScrollControls } from "@react-three/drei"
+import { Noise } from "@react-three/postprocessing"
+import { BlendFunction } from "postprocessing"
 // import SVGLogo from "./assets/aurora-icon-2.svg"
 // import SVGLogo from "./assets/aurora-icon-2.png"
 // import SVGLogo from "./assets/aurora-kj.png"
 
+const workImages = [
+	"./img/work-preview-sno.png",
+	"./img/work-preview-cinema.png",
+	"./img/work-preview-folkeeventyr.png",
+]
+
+console.log(workImages)
+
 const Home = () => {
 	return (
 		<ScrollControls
-			pages={3}
+			pages={4.2}
 			damping={0.1}
 			// infinite={true}
 		>
@@ -19,12 +29,21 @@ const Home = () => {
 						experiences.
 					</h1>
 				</header>
-				<section style={{ top: "200vh" }}>
-					<h1>Hello 2</h1>
+				<section className='section__work'>
+					<div>
+						<img src={`${workImages[0]}`} />
+					</div>
+					<div>
+						<img src={`${workImages[1]}`} />
+					</div>
+					<div>
+						<img src={`${workImages[2]}`} />
+					</div>
 				</section>
-				<section style={{ top: "300vh" }}>
-					<h1>Hello 2</h1>
-				</section>
+				<footer style={{ top: "400vh" }}>
+					<div>Kenneth</div>
+					<div>Contact</div>
+				</footer>
 			</Scroll>
 		</ScrollControls>
 	)

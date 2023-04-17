@@ -16,6 +16,12 @@ canvas
 	overflow: hidden
 	font-family: sans-serif
 
+.header
+	top: 35vh
+
+.cls1
+	mix-blend-mode: darken
+
 nav 
 	position: fixed
 	left: 15%
@@ -29,25 +35,45 @@ nav
 
 	// outline: 1px solid red
 
+	path
+		mix-blend-mode: darken
+
 	img 
 		width: 40px
+	
 	.menu
 		width: 30px
 		height: 30px
 		border-radius: 50%
-		border: 1px solid #fff
+		// border: 1px solid #fff
+		img
+			width: 20px
 
 header,
 section
 	position: absolute
 	left: 15vw
 	width: 70%
+	display: grid
 
-.header
-	top: 50vh
+.section__work
+	top: 80vh
+	width: 70vw
+
+	div
+		margin-bottom: 15%
+		// background: url('./img/work-preview-sno.png')
+		// height: 40vh
 
 h1
 	font-family: 'Bowlby One SC, Baskervville, Antic Didone'
 	font-weight: 400
 	font-size: 3rem
 	line-height: 3.7rem
+
+footer
+	position: absolute
+	left: 15vw
+	display: flex
+	width: 70vw
+	justify-content: space-between
