@@ -1,14 +1,13 @@
 @import "../Variables";
 
-@keyframes slideIn {
-	0% {
-		transform: translateY(-100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+// @keyframes slideIn {
+// 	0% {
+// 		transform: translateY(-100%);
+// 	}
+// 	100% {
+// 		transform: translateY(0);
+// 	}
+// }
 
 nav {
 	position: fixed;
@@ -49,6 +48,11 @@ nav {
 			}
 		}
 	}
+
+	@include media(">=phone", "<tablet") {
+		left: $content-margin-mobile;
+		width: $content-width-mobile;
+	}
 }
 
 header {
@@ -56,13 +60,32 @@ header {
 	left: $content-margin;
 	width: $content-width;
 	margin: calc(10vh + 20vw) 0 10vw 0;
+	@include media(">=phone", "<tablet") {
+		left: $content-margin-mobile;
+		width: $content-width-mobile;
+	}
+
+	.header-text__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.header__words {
+			// overflow: hidden;
+
+			span {
+				// opacity: 0;
+				display: inline-block;
+				overflow: hidden;
+			}
+		}
+	}
 }
 
 h1 {
 	width: 80%;
 	font-weight: bold;
 	font-size: clamp(1rem, 4vw, 4rem);
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	// line-height: clamp(0.5rem, 3.5vw, 3.5rem);
 	// line-height: 3.5vw;
 }
@@ -73,18 +96,4 @@ h2 {
 	text-transform: uppercase;
 	width: 80%;
 	margin-bottom: clamp(0.5rem, 1vw, 1rem);
-}
-
-.header-text__wrapper {
-	display: flex;
-	flex-direction: column;
-
-	.header__words {
-		overflow: hidden;
-
-		span {
-			// opacity: 0;
-			// animation: slideIn 1s ease forwards;
-		}
-	}
 }
