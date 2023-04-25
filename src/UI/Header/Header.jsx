@@ -3,6 +3,11 @@ import styles from "./Header.module.scss"
 import { SplitText } from "@cyriacbr/react-split-text"
 
 const Header = () => {
+	const headingVariants = {
+		visible: { opacity: 1, transformY: 100, transition: { duration: 1 } },
+		hidden: { opacity: 0 },
+	}
+
 	return (
 		<header>
 			<nav>
