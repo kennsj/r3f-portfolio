@@ -1,0 +1,21 @@
+main {
+	position: relative;
+	left: 15vw;
+	width: 70%;
+	display: grid;
+}
+
+section {
+	// top: 80vh;
+	width: 70vw;
+
+	.work__container {
+		// margin-bottom: 15%;
+		// background: url('./img/work-preview-sno.png');
+		// height: 40vh;
+
+		img {
+			width: 100%;
+		}
+	}
+}
