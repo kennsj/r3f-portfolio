@@ -1,9 +1,13 @@
-<svg width="57" height="73" viewBox="0 0 57 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="57" height="73" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_1_180" transform="scale(0.0175439 0.0136986)"/>
-</pattern>
-<image id="image0_1_180" width="57" height="73" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAABJCAYAAACHOo5EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIbSURBVHhe7dvRkcFQFMbxm+1AA7SgAFpQAC3wiBp4pQbjlRqMV2rgXQt2vjgZ2Stssufe5MzZ85/JSHbsrN8kbrI3JK1W6+6U90WPqjOklgypJUNqyZBaMqSWDKklQ2rJkFoypJYMqSVDhmi/37vb7fayrNdresZrvV7PnU6nwt/DMhwOXbvdpmf/XtR5VwDxgv02m42bTCbufv/8pwHtdDq09WixWKRLlaLtSS4QHQ4HWntWFYiiIHe73VvgeDwuBSzqcrnQWrWCIwHs9/u09SwDNlFQJA5RaUAUDPnpPdgkEAVBSgYiNlI6ELGQOClLByIWcjab0dozAHEelBQL6V9aZcC/ngdjxULmr0hweGKRBkQs5Ha7TR+Bw16UGgsJ2GAw+AHEYCQtFhLlD1mMtKvVys3nc/qJjNjIfBhtkyRJkZKgQZH50VYSNCjS/1dICjQocrlcvpxCJECDIjEIAerXNDQoEr2bg2kSGhyJpEGjIJEkaDQkkgKNikQSoNGRqGloLUjUJLT2j2e/u4dRNHGMi/3RaERbj+d0u13aKl9tezILL7RoiVntyCpVuXP1KdFIv6IbQGUSjfSnO6/XK61VSywy1KGKxCL9vYjBqegUVCaxyOl0mk6lZHFm5EUicajmD1cMOH8ddJC472oBdz6faculU54cIBKHzD4Vcjwe0/chF4jsW3daMqSWDKklQ2rJkFr6B0jnvgH60x17ADuppQAAAABJRU5ErkJggg=="/>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 155.8 187.8" style="enable-background:new 0 0 155.8 187.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCB2B2;}
+</style>
+<title>kj-pictogram_white</title>
+<path class="st0" d="M155.8,0H104c0,0,13.3,0,14.8,12.6v126.7c0,20.6-3.4,34.6-17.4,48.5c24.4,0,39.5-17,39.5-45.1V15
+	C140.9,0,155.8,0,155.8,0z"/>
+<path class="st0" d="M93.6,135.8H64L26.3,98.1c0,0-14.8-13.3,0-28.1L93.6,135.8z"/>
+<path class="st0" d="M78.5,0H47.1L7,40.1c0,0-15.7,14.2,0,29.9L78.5,0z"/>
 </svg>

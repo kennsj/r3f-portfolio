@@ -1,0 +1,18 @@
+@import "../_variables";
+
+main {
+	position: relative;
+	left: 15vw;
+	width: 70vw;
+	display: grid;
+
+	@include media(">=phone", "<tablet") {
+		left: $content-margin-mobile;
+		width: $content-width-mobile;
+	}
+}
+
+section {
+	// top: 80vh;
+	// width: 70vw;
+}

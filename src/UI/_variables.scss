@@ -1,4 +1,5 @@
 @import "./Breakpoints/breakpoints.scss";
+@import "./fonts.scss";
 
 $primary-color: #ccb2b2;
 $primary-color-50: #ccb2b27e;
@@ -8,3 +9,24 @@ $content-margin: 15vw;
 
 $content-width-mobile: 85vw;
 $content-margin-mobile: 7.5vw;
+
+h1 {
+	font-weight: bold;
+	font-size: clamp(1rem, 4vw, 4rem);
+}
+
+h2 {
+	font-weight: bold;
+	font-size: clamp(0.5rem, 1vw, 1rem);
+	text-transform: uppercase;
+	margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 10px;
+}

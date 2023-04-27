@@ -1,12 +1,20 @@
-import Logo from "../../assets/logo/kj-pictogram_white.svg"
+import Logo from "../../assets/logo/kj-logo.svg"
 import styles from "./Header.module.scss"
 import { SplitText } from "@cyriacbr/react-split-text"
+import { useAnimation, motion } from "framer-motion"
+import { useEffect, useRef } from "react"
+import { useInView } from "react-intersection-observer"
 
 const Header = () => {
 	const headingVariants = {
-		visible: { opacity: 1, transformY: 100, transition: { duration: 1 } },
-		hidden: { opacity: 0 },
+		visible: { opacity: 1, transition: { duration: 1 } },
+		hidden: { opacity: 0, y: "-100%" },
 	}
+
+	const headingRef = useRef(null)
+
+	const controls = useAnimation()
+	const isInView = useInView(headingRef)
 
 	return (
 		<header>
@@ -35,7 +43,13 @@ const Header = () => {
 						}
 						role={"Header"}
 					/> */}
-				<h1 className={styles.header__words}>
+				<motion.h1
+					variants={headingVariants}
+					className={styles.header__words}
+					initial='hidden'
+					animate={{ y: "0", opacity: 1 }}
+					ref={headingRef}
+				>
 					<SplitText
 						LineWrapper={({ lineIndex, children }) => (
 							<span
@@ -50,8 +64,9 @@ const Header = () => {
 						concepts & products which focuses user-engagements.
 					</SplitText>
 					{/* Continuously exploring & challenging myself to create memorable experiences. */}
-				</h1>
+				</motion.h1>
 			</div>
+			<div className='test' style={{ height: "30dvh" }}></div>
 		</header>
 	)
 }

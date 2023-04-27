@@ -1,28 +1,49 @@
 @import "../_variables";
 
-main {
-	position: relative;
-	left: 15vw;
-	width: 70%;
+.work__container {
 	display: grid;
+	grid-template-columns: 2fr;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10rem;
+	flex-grow: 1;
 
-	@include media(">=phone", "<tablet") {
-		left: $content-margin-mobile;
-		width: $content-width-mobile;
-	}
-}
+	.work__information {
+		position: absolute;
+		bottom: 60%;
+		transform: translateY(50%);
+		left: -10%;
+		// top: 50%;
+		// left: -21%;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// width: 60%;
+		// height: 40%;
+		padding: 4rem 3rem;
 
-section {
-	// top: 80vh;
-	// width: 70vw;
-
-	.work__container {
-		// margin-bottom: 15%;
-		// background: url('./img/work-preview-sno.png');
-		// height: 40vh;
-
-		img {
-			width: 100%;
+		h3 {
+			width: 50%;
+			font-size: 5rem;
+			// text-shadow: 4px 4px 12px rgba(41, 41, 41, 0.67);
 		}
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		h3,
+		h4 {
+			color: $primary-color;
+			text-shadow: 4px 4px 12px rgba(41, 41, 41, 0.67);
+		}
+	}
+	img {
+		width: 100%;
+		// position: absolute;
+		// float: right;
+		// position: relative;
+		// width: 100%;
 	}
 }
