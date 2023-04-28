@@ -40,7 +40,7 @@ export default function LightSource() {
 
 	return (
 		<>
-			<directionalLight ref={light} intensity={5} />
+			<directionalLight ref={light} intensity={2.2} />
 
 			<ambientLight color={"#a6d59e"} ref={light5} intensity={2.5} />
 		</>

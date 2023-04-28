@@ -1,7 +1,30 @@
 footer {
-	position: relative;
-	left: 15vw;
+	position: fixed;
+	left: 7.5vw;
+	bottom: 10vh;
+	bottom: 10dvh;
 	display: flex;
-	width: 70vw;
+	flex-wrap: wrap;
+	width: 85vw;
 	justify-content: space-between;
+
+	.social {
+		display: flex;
+		flex-direction: column;
+
+		img {
+			width: 1.7rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.music__toggle {
+		// transform: rotate(-90deg);
+		display: flex;
+		align-items: end;
+	}
+
+	.sound {
+		width: 1.7rem;
+	}
 }

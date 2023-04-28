@@ -8,12 +8,15 @@ import LightSource from "./Experiences/LightSource"
 import Interface from "./UI/Interface"
 import Cursor from "./UI/Cursor"
 import { Preload } from "@react-three/drei"
+import Nav from "./UI/Header/Nav"
+import Footer from "./UI/Footer/Footer"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<Suspense>
 			{/* <Cursor /> */}
 			<Leva hidden collapsed />
+			<Nav />
 			<div id='canvas'>
 				<Canvas>
 					<Interface />
@@ -22,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 					<Preload all />
 				</Canvas>
 			</div>
+			<Footer />
 		</Suspense>
 	</React.StrictMode>
 )
