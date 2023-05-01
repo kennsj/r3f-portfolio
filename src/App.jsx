@@ -10,6 +10,7 @@ import Cursor from "./UI/Cursor"
 import { Preload } from "@react-three/drei"
 import Nav from "./UI/Header/Nav"
 import Footer from "./UI/Footer/Footer"
+import Test from "./UI/Test/Test"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 			<Nav />
 			<div id='canvas'>
 				<Canvas>
+					{/* <Test /> */}
 					<Interface />
 					<LightSource />
 					<Experience />

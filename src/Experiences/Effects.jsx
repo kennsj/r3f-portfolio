@@ -33,7 +33,6 @@ const Effects = (props) => {
 			<Noise premultiply blendFunction={BlendFunction.DARKEN} opacity={0.4} />
 			<Bloom mipmapBlur intensity={1.8} luminanceThreshold={0.9} radius={0.9} />
 			<Vignette offset={0.1} darkness={0.95} eskil={true} />
-
 			<Wave
 				ref={waveRef}
 				// uFrequency={uFrequency}

@@ -16,10 +16,14 @@ const Work = (props) => {
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 			}}
 		>
-			<a href='#'>
-				<div className={styles.work__information}>
+			<a href={props.href}>
+				<div className={styles.work__card}>
 					<h4>{props.subtitle}</h4>
 					<h3>{props.title}</h3>
+					<div className={styles.work__info}>
+						<p>{props.info}</p>
+					</div>
+					{/* <span>Visitn</span> */}
 				</div>
 				<img src={props.image} />
 				{/* {children} */}

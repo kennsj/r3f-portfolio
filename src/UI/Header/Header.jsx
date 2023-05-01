@@ -6,8 +6,6 @@ import { useInView } from "react-intersection-observer"
 import SplitType from "split-type"
 import gsap from "gsap"
 
-console.log(gsap)
-
 const Header = () => {
 	// const headingVariants = {
 	// 	visible: { opacity: 1, transition: { duration: 1 } },

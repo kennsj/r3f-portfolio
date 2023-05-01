@@ -10,8 +10,6 @@ const socialIcons = [
 	"./img/icons/sound.png",
 ]
 
-console.log(socialIcons)
-
 const Footer = () => {
 	return (
 		<footer style={styles.footer}>
