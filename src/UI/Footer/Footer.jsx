@@ -7,7 +7,7 @@ const socialIcons = [
 	"./img/icons/linkedin.png",
 	"./img/icons/spotify.png",
 	"./img/icons/mail.png",
-	"./img/icons/sound.png",
+	"./img/icons/sound2.png",
 ]
 
 const Footer = () => {
@@ -43,6 +43,7 @@ const Footer = () => {
 			{/* <div className={styles.music__toggle}>Music OFF</div> */}
 			<div className={styles.music__toggle}>
 				<img
+					style={{ width: "50px" }}
 					className={styles.sound}
 					src={socialIcons[5]}
 					alt='social spotify page'

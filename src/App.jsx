@@ -19,15 +19,31 @@ import {
 	Routes,
 	HashRouter,
 	BrowserRouter,
+	createHashRouter,
 } from "react-router-dom"
 
 // export function BrowswerRouter() {
 // 	return <Router />
 // }
 
+// const router = createHashRouter([
+// 	{
+// 		basename: "/",
+// 		path: "/",
+// 		element: <Home />,
+// 		children: [
+// 			{
+// 				path: "/sno",
+// 				element: <Sno />,
+// 				//   loader: salesLoader
+// 			},
+// 		],
+// 	},
+// ])
+
 const App = () => {
 	return (
-		<Suspense>
+		<>
 			{/* <Cursor /> */}
 			<Leva collapsed />
 			<Nav />
@@ -38,6 +54,7 @@ const App = () => {
 					<LightSource />
 					<Experience />
 					<Preload all />
+					{/* <RouterProvider router={router} /> */}
 					<HashRouter>
 						<Routes>
 							<Route path='/' index element={<Home />} />
@@ -48,7 +65,7 @@ const App = () => {
 			</div>
 
 			<Footer />
-		</Suspense>
+		</>
 	)
 }
 

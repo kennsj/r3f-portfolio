@@ -35,7 +35,7 @@ const Sno = () => {
 					</header>
 					<main className={styles.work__main}>
 						<video loop={true} controls>
-							<source src='./public/video/sno-vr.mp4' type='video/mp4' />
+							<source src='./video/sno-vr.mp4' type='video/mp4' />
 						</video>
 					</main>
 					<footer></footer>
