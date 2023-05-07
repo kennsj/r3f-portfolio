@@ -11,7 +11,7 @@ const Home = () => {
 			// infinite={true}
 		>
 			<Scroll html>
-				<Header anc />
+				<Header />
 				<WorkList />
 			</Scroll>
 		</ScrollControls>

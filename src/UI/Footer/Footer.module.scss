@@ -1,4 +1,4 @@
-footer {
+.social__overlay {
 	position: fixed;
 	left: 7.5vw;
 	bottom: 10vh;
@@ -7,10 +7,12 @@ footer {
 	flex-wrap: wrap;
 	width: 85vw;
 	justify-content: space-between;
+	pointer-events: none;
 
 	.social {
 		display: flex;
 		flex-direction: column;
+		pointer-events: auto;
 
 		img {
 			width: 1.7rem;
@@ -26,5 +28,6 @@ footer {
 
 	.sound {
 		width: 1.7rem;
+		pointer-events: auto;
 	}
 }

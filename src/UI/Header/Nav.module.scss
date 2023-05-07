@@ -11,11 +11,13 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1;
+	pointer-events: none;
 	// opacity: 0;
 	// animation: slideIn 1s ease forwards;
 
 	img {
 		width: 40px;
+		pointer-events: auto;
 		// filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
 	}
 
@@ -34,6 +36,7 @@ nav {
 				text-decoration: none;
 				text-transform: uppercase;
 				transition: color 0.2s ease-in;
+				pointer-events: auto;
 				&:hover {
 					color: $primary-color;
 					transition: color 0.2s ease-in;

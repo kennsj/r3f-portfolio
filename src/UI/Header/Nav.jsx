@@ -4,7 +4,7 @@ import styles from "./Nav.module.scss"
 const Nav = () => {
 	return (
 		<nav>
-			<a href=''>
+			<a href='/'>
 				<img src={Logo} />
 			</a>
 			<div className={styles.menu}>

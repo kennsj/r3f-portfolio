@@ -20,6 +20,7 @@ function Experience() {
 				<Plane scale={[viewport.width, viewport.height, 1]} args={[1, 1, 1, 1]}>
 					<meshPhysicalMaterial
 						toneMapped={false}
+						// color='#191919'
 						color='#191919'
 						roughness={0.5}
 						metalness={0.25}

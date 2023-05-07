@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import styles from "./Work.module.scss"
 import { useInView } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const Work = (props) => {
 	const workRef = useRef(null)
@@ -8,6 +9,7 @@ const Work = (props) => {
 
 	return (
 		<div
+			href='#work'
 			className={styles.work__container}
 			ref={workRef}
 			style={{
@@ -17,16 +19,17 @@ const Work = (props) => {
 			}}
 		>
 			<a href={props.href}>
+				{/* <Link to=""> */}
 				<div className={styles.work__card}>
 					<h4>{props.subtitle}</h4>
 					<h3>{props.title}</h3>
 					<div className={styles.work__info}>
 						<p>{props.info}</p>
 					</div>
-					{/* <span>Visitn</span> */}
+					<span>Explore</span>
+					<img src={props.image} />
 				</div>
-				<img src={props.image} />
-				{/* {children} */}
+				{/* </Link> */}
 			</a>
 		</div>
 	)

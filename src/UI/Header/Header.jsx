@@ -41,7 +41,7 @@ const Header = () => {
 
 	return (
 		<>
-			<header>
+			<header className={styles.home__header}>
 				<div className={styles.intro}>
 					<h1>
 						Kenneth <br />
@@ -58,10 +58,14 @@ const Header = () => {
 						}
 						role={"Header"}
 					/> */}
-					<h1 ref={headingRef}>
+					<h1>
 						A multidisciplinary designer with a passion for creating exciting
 						concepts & products which focuses user-engagements.
 					</h1>
+					{/* <h1 ref={headingRef}>
+						A multidisciplinary designer with a passion for creating exciting
+						concepts & products which focuses user-engagements.
+					</h1> */}
 					{/* <h1>
 						{text.split("\n").map((i, key) => {
 							return <span key={key}>{i}</span>

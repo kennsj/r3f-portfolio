@@ -12,7 +12,7 @@ const socialIcons = [
 
 const Footer = () => {
 	return (
-		<footer style={styles.footer}>
+		<div className={styles.social__overlay}>
 			<div className={styles.social}>
 				{/* <span>
 					<a href='#'>
@@ -48,7 +48,7 @@ const Footer = () => {
 					alt='social spotify page'
 				/>
 			</div>
-		</footer>
+		</div>
 	)
 }
 

@@ -1,15 +1,19 @@
 @import "../Variables";
 
-header {
+.home__header {
 	position: relative;
 	left: $content-margin;
 	width: $content-width;
-	height: 80vh;
-	height: 80dvh;
+	height: 100vh;
+	height: 100dvh;
 	display: grid;
 	align-items: center;
+
 	h1 {
-		font-size: 5rem;
+		font-size: 9rem;
+		@include media(">=phone", "<tablet") {
+			font-size: clamp(1rem, 1vw + 5rem, 5rem);
+		}
 	}
 }
 

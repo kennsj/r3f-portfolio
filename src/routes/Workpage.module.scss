@@ -1,0 +1,50 @@
+@import "../UI/variables";
+
+.work__header {
+	display: flex;
+	flex-direction: column;
+	width: $content-width;
+	margin-left: $content-margin;
+	margin-top: 40vh;
+	margin-top: 40dvh;
+
+	h1 {
+		width: 70%;
+	}
+
+	.project__info {
+		display: flex;
+		gap: 5rem;
+		margin-top: 5rem;
+		line-height: 1.5rem;
+
+		div {
+			display: flex;
+			flex-direction: column;
+
+			&:last-child {
+				margin-left: auto;
+				place-items: end;
+			}
+		}
+	}
+}
+
+.work__main {
+	// width: $content-width;
+	// margin-left: $content-margin;
+	margin-top: 5rem;
+
+	video {
+		width: 100%;
+	}
+}
+
+footer {
+	width: $content-width;
+	margin-left: $content-margin;
+}
+
+h1 {
+	font-weight: 400;
+}

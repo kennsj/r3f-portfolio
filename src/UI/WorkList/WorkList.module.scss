@@ -24,5 +24,7 @@ main {
 	@include media("<tablet") {
 		left: $content-margin-mobile;
 		width: $content-width-mobile;
+		left: 5vw;
+		width: 90vw;
 	}
 }

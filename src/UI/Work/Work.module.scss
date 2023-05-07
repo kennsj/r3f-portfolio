@@ -5,7 +5,11 @@
 	// width: $content-width;
 	// width: 100%;
 	width: 60vw;
-	margin-bottom: 10rem;
+	margin-bottom: 15rem;
+	@include media("<tablet") {
+		width: 100%;
+		margin-bottom: 5rem;
+	}
 
 	a {
 		display: flex;
@@ -13,20 +17,30 @@
 		justify-content: space-between;
 		text-transform: none;
 		text-decoration: transparent;
+
+		&:hover span::before {
+			transform: scale(1.5);
+			transition: transform 0.3s ease-in;
+		}
+		&:hover span::after {
+			transform: translateX(5px);
+			transition: transform 0.3s ease-in;
+		}
 	}
 
 	.work__card {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 25rem;
+		width: 30rem;
 		color: $primary-color;
 
 		z-index: 1;
+
+		@include media("<tablet") {
+			width: 100%;
+		}
 
 		.work__info {
 			// width: 20rem;
@@ -34,36 +48,68 @@
 			display: flex;
 		}
 
-		h3 {
-			font-size: 5rem;
-
-			// @include media(">desktop") {
-			// 	font-size: 1.5rem;
-			// }
+		.work__info {
+			@include media("<tablet") {
+				// position: absolute;
+				// bottom: 0;
+				// right: 0;
+				order: 4;
+			}
 		}
 
-		h4 {
-			width: 5rem;
-			font-size: 1rem;
-			font-weight: normal;
-			margin-bottom: 1rem;
-		}
+		span {
+			margin-top: 1rem;
+			margin-left: 0.7rem;
 
-		p {
-			// width: 50%;
-			// margin-top: 1rem;
-			font-size: 1rem;
-			width: 14rem;
+			&::before {
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				background: $secondary-color-50;
+				background: $secondary-color;
+				margin-left: -0.7rem;
+				margin-top: -5px;
+				border-radius: 50%;
+				z-index: -1;
+				content: "";
+				transition: transform 0.3s ease-out;
+			}
+			&::after {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				margin: 2px 0 0 0.7rem;
+				background-image: url("./public/img/icons/arrow-right.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				content: "";
+				transition: 0.3s ease-out;
+			}
+			@include media("<tablet") {
+				position: absolute;
+				bottom: 5%;
+				right: 10%;
+				order: 5;
+			}
 		}
-	}
-	img {
-		position: relative;
-		width: 80%;
-		right: -20vw;
-		// width: 120rem;
-		// position: absolute;
-		// float: right;
-		// position: relative;
-		// width: 100%;
+		img {
+			position: absolute;
+			z-index: -1;
+			width: 60vw;
+			width: 50rem;
+			left: 15vw;
+
+			@include media("<desktop") {
+				width: 50vw;
+			}
+
+			@include media("<tablet") {
+				position: relative;
+				// left: $content-margin-mobile;
+				left: -3.5vw;
+				width: 95vw;
+				order: 2;
+			}
+		}
 	}
 }
