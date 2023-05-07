@@ -17,6 +17,7 @@ import {
 	RouterProvider,
 	Router,
 	Routes,
+	HashRouter,
 	BrowserRouter,
 } from "react-router-dom"
 
@@ -37,12 +38,12 @@ const App = () => {
 					<LightSource />
 					<Experience />
 					<Preload all />
-					<BrowserRouter>
+					<HashRouter>
 						<Routes>
 							<Route path='/' index element={<Home />} />
 							<Route path='/Sno' element={<Sno />} />
 						</Routes>
-					</BrowserRouter>
+					</HashRouter>
 				</Canvas>
 			</div>
 

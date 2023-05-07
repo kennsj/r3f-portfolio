@@ -1,7 +1,6 @@
 import { useRef } from "react"
-import styles from "./Work.module.scss"
 import { useInView } from "framer-motion"
-import { Link } from "react-router-dom"
+import styles from "./Work.module.scss"
 
 const Work = (props) => {
 	const workRef = useRef(null)
