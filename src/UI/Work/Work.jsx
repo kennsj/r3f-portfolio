@@ -20,7 +20,7 @@ const Work = (props) => {
 			<a href={props.href}>
 				{/* <Link to=""> */}
 				<div className={styles.work__card}>
-					<h4>{props.subtitle}</h4>
+					<h4 className={styles.work__subtitle}>{props.subtitle}</h4>
 					<h3>{props.title}</h3>
 					<div className={styles.work__info}>
 						<p>{props.info}</p>

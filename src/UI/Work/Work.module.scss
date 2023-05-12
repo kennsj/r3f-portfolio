@@ -42,6 +42,14 @@
 			width: 100%;
 		}
 
+		.work__subtitle {
+			width: auto;
+			width: fit-content;
+			border: 1px solid $primary-color-50;
+			border-radius: 1rem;
+			padding: 0.5rem 1rem;
+		}
+
 		.work__info {
 			// width: 20rem;
 			margin-top: 2rem;

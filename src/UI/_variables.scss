@@ -10,8 +10,8 @@ $secondary-color-50: #3c1a1a;
 $content-width: 70vw;
 $content-margin: 15vw;
 
-$content-width-mobile: 85vw;
-$content-margin-mobile: 7.5vw;
+$content-width-mobile: 90vw;
+$content-margin-mobile: 5vw;
 
 .highlighted {
 	color: $secondary-color;
@@ -20,9 +20,12 @@ $content-margin-mobile: 7.5vw;
 p {
 	// width: 50%;
 	// margin-top: 1rem;
-	font-family: "Playfair Display";
+	// font-family: "Playfair Display";
 	font-size: 1rem;
 	width: 14rem;
+	@include media("<tablet") {
+		width: 60%;
+	}
 }
 
 h1 {
