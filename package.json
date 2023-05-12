@@ -1,5 +1,5 @@
 {
-	"name": "13-r3f-portfolio",
+	"name": "r3f-portfolio",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -8,7 +8,6 @@
 		"dev": "vite --host",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist",
-		"build": "vite build && gh-pages -d dist",
 		"preview": "vite preview --host"
 	},
 	"dependencies": {
