@@ -25,15 +25,15 @@ const Footer = () => {
 					</a>
 				</span> */}
 				<span>
-					<a href='#'>
+					<a href='https://www.linkedin.com/in/kennethstrandjorgensen/'>
 						<img src={socialIcons[2]} alt='social linkedin page' />
 					</a>
 				</span>
-				<span>
+				{/* <span>
 					<a href='https://open.spotify.com/user/eqlipze?si=af0dc9658fc44a55'>
 						<img src={socialIcons[3]} alt='social spotify page' />
 					</a>
-				</span>
+				</span> */}
 				<span>
 					<a href='mailto:kennethsjorgensen@gmail.com'>
 						<img src={socialIcons[4]} alt='mail' />

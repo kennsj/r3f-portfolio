@@ -51,7 +51,7 @@ const Header = () => {
 			</header>
 			<section className={styles.intro__section}>
 				<div className={styles["header-text__wrapper"]}>
-					<h2>About me</h2>
+					<h4>About me</h4>
 					{/* <SplitText
 						text={
 							"I’m a multidisciplinary designer with a  passion for creating exciting concepts & products which focuses on engaging the users."
@@ -59,8 +59,8 @@ const Header = () => {
 						role={"Header"}
 					/> */}
 					<h1>
-						A multidisciplinary designer with a passion for creating exciting
-						concepts & products which focuses user-engagements.
+						Multidisciplinary designer & developer with a passion for creating
+						exciting concepts & products which focuses user-engagements.
 					</h1>
 					{/* <h1 ref={headingRef}>
 						A multidisciplinary designer with a passion for creating exciting

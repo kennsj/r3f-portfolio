@@ -20,6 +20,7 @@ $content-margin-mobile: 7.5vw;
 p {
 	// width: 50%;
 	// margin-top: 1rem;
+	font-family: "Playfair Display";
 	font-size: 1rem;
 	width: 14rem;
 }
@@ -50,9 +51,10 @@ h3 {
 }
 
 h4 {
+	font-family: "Playfair Display";
 	font-size: 1rem;
 	font-weight: normal;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	@include media("<tablet") {
 		font-size: 0.7rem;
 		margin-bottom: 0.5rem;
