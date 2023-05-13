@@ -2,7 +2,7 @@ import { Suspense } from "react"
 import Experience from "./Experiences/Experience"
 import "./App.scss"
 import { Canvas } from "@react-three/fiber"
-import { Leva } from "leva"
+// import { Leva } from "leva"
 import LightSource from "./Experiences/LightSource"
 import Home from "./UI/Home"
 import Cursor from "./UI/Cursor"
@@ -45,7 +45,7 @@ const App = () => {
 	return (
 		<>
 			{/* <Cursor /> */}
-			<Leva collapsed />
+			{/* <Leva collapsed /> */}
 			<Nav />
 			<div id='canvas'>
 				<Canvas>

@@ -1,7 +1,7 @@
 import { Plane, useTexture } from "@react-three/drei"
 import { useThree } from "@react-three/fiber"
 import Effects from "./Effects"
-import { useControls } from "leva"
+// import { useControls } from "leva"
 
 function Experience() {
 	const viewport = useThree((state) => state.viewport)
@@ -9,9 +9,9 @@ function Experience() {
 	const displacementMap = useTexture("./textures/displacement2.png")
 	const normalMap = useTexture("./textures/normal2.png")
 
-	const colors = useControls({
-		value: "green",
-	})
+	// const colors = useControls({
+	// 	value: "green",
+	// })
 
 	return (
 		<>

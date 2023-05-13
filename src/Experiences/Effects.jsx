@@ -6,7 +6,7 @@ import {
 } from "@react-three/postprocessing"
 import { useRef } from "react"
 import { BlendFunction } from "postprocessing"
-import { useControls } from "leva"
+// import { useControls } from "leva"
 import { isMobile } from "react-device-detect"
 import Wave from "./Wave"
 
@@ -18,15 +18,15 @@ const Effects = (props) => {
 	// 	uAmplitude: { value: 0.22, min: 0, max: 1, step: 0.01 },
 	// })
 
-	const { uFrequency, uAmplitude, uMousePos } = useControls({
-		uFrequency: { value: 4.66, min: 0, max: 20, step: 0.01 },
-		uAmplitude: { value: 0.15, min: 0, max: 1, step: 0.01 },
-	})
+	// const { uFrequency, uAmplitude, uMousePos } = useControls({
+	// 	uFrequency: { value: 4.66, min: 0, max: 20, step: 0.01 },
+	// 	uAmplitude: { value: 0.15, min: 0, max: 1, step: 0.01 },
+	// })
 
-	if (isMobile) {
-		const uFrequency = 0.92
-		const uAmplitude = 0.22
-	}
+	// if (isMobile) {
+	// 	const uFrequency = 0.92
+	// 	const uAmplitude = 0.22
+	// }
 
 	return (
 		<EffectComposer disableNormalPass multisampling={false}>
@@ -36,8 +36,8 @@ const Effects = (props) => {
 			<Wave
 				ref={waveRef}
 				// uFrequency={uFrequency}
-				uFrequency={uFrequency}
-				uAmplitude={uAmplitude}
+				uFrequency={4.66}
+				uAmplitude={0.15}
 				uMousePos
 				blendFunction={BlendFunction.MULTIPLY}
 			/>
