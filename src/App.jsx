@@ -55,12 +55,12 @@ const App = () => {
 					<Experience />
 					<Preload all />
 					{/* <RouterProvider router={router} /> */}
-					<HashRouter>
+					<BrowserRouter>
 						<Routes>
 							<Route path='/' index element={<Home />} />
 							<Route path='/Sno' element={<Sno />} />
 						</Routes>
-					</HashRouter>
+					</BrowserRouter>
 				</Canvas>
 			</div>
 
