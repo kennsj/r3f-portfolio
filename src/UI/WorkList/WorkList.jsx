@@ -14,19 +14,19 @@ const WorkList = (props) => {
 		<main>
 			<section className={styles.work__section}>
 				<Work
-					href='./sno'
-					subtitle='VR / Concept'
-					title='SNØ Oslo'
-					info='Designing an interactive portal which works as an access point to SNØ Oslo, a year-round arena for snow experiences'
-					image={workImages[0]}
-				></Work>
-				<Work
 					href='./cinema'
 					subtitle='UX / UI'
 					title='Cinema / Theatre'
 					info='Design concept to further develope and improve usability for a CMS used by cinema and theatre clients'
 					image={workImages[1]}
 				/>
+				<Work
+					href='./sno'
+					subtitle='VR / Concept'
+					title='SNØ Oslo'
+					info='Designing an interactive portal which works as an access point to SNØ Oslo, a year-round arena for snow experiences'
+					image={workImages[0]}
+				></Work>
 				<Work
 					href='./nfe'
 					subtitle='3D / UI'
