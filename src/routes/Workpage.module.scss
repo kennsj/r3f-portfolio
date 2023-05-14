@@ -12,6 +12,24 @@
 		width: 70%;
 	}
 
+	h1 {
+		color: $secondary-color;
+		font-size: 5rem;
+		font-weight: 800;
+		margin: 0 0 1.5rem -3rem;
+
+		@include media("<tablet") {
+			font-size: 2rem;
+			order: 2;
+			margin: 0 0 1rem 0;
+		}
+	}
+
+	p {
+		width: 100%;
+		font-size: clamp(1rem, 4vw, 4rem);
+	}
+
 	.project__info {
 		display: flex;
 		gap: 5rem;
@@ -36,6 +54,10 @@
 	margin-top: 5rem;
 
 	video {
+		width: 100%;
+	}
+
+	img {
 		width: 100%;
 	}
 }

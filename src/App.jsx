@@ -11,6 +11,8 @@ import Nav from "./UI/Header/Nav"
 import Footer from "./UI/Footer/Footer"
 import Test from "./UI/Test/Test"
 import Sno from "./routes/SNO-Oslo/Sno"
+import Cinema from "./routes/Cinema/Cinema"
+import Nfe from "./routes/Nfe/Nfe"
 import {
 	createBrowserRouter,
 	Route,
@@ -59,6 +61,8 @@ const App = () => {
 						<Routes>
 							<Route path='/' index element={<Home />} />
 							<Route path='/Sno' element={<Sno />} />
+							<Route path='/Cinema' element={<Cinema />} />
+							<Route path='/Nfe' element={<Nfe />} />
 						</Routes>
 					</BrowserRouter>
 				</Canvas>

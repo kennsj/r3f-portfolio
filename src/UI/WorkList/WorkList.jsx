@@ -21,26 +21,19 @@ const WorkList = (props) => {
 					image={workImages[0]}
 				></Work>
 				<Work
-					href='./#'
+					href='./cinema'
 					subtitle='UX / UI'
 					title='Cinema / Theatre'
 					info='Design concept to further develope and improve usability for a CMS used by cinema and theatre clients'
 					image={workImages[1]}
 				/>
 				<Work
-					href='./#'
+					href='./nfe'
 					subtitle='3D / UI'
 					title='Norwegian Folklore'
 					info='Building an interactive experience to retell old folklores on a modern, digital platform'
 					image={workImages[2]}
 				/>
-				{/* <Work
-					href='./#'
-					subtitle='UX / UI'
-					title='Norwegian Folklore'
-					info='Building an interactive experience to retell old folklores on a modern, digital platform'
-					image={workImages[10]}
-				/> */}
 			</section>
 		</main>
 	)
