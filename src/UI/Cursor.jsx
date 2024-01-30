@@ -4,20 +4,23 @@ const Cursor = () => {
 	return (
 		<>
 			<AnimatedCursor
-				innerSize={8}
+				innerSize={12}
+				innerScale={0.8}
 				outerSize={35}
-				innerScale={1}
-				outerScale={1.7}
-				outerAlpha={0}
-				hasBlendMode={true}
+				outerScale={1.4}
+				outerAlpha={0.5}
+				hasBlendMode={false}
+				showSystemCursor={false}
+				color='255,  255 ,  255'
 				outerStyle={{
-					border: "2px solid #fff",
+					border: "1 solid #fff",
 				}}
 				innerStyle={{
-					width: "5px",
-					height: "5px",
+					width: "0",
+					height: "0",
 					backgroundColor: "#fff",
 				}}
+				// clickables={["a"]}
 			/>
 		</>
 	)

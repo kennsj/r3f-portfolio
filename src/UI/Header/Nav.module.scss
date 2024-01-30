@@ -2,10 +2,10 @@
 
 nav {
 	position: fixed;
-	left: calc($content-margin - 7.5vw);
+	left: calc($content-margin + 5vw);
 	top: 10vh;
 	top: 10dvh;
-	width: calc($content-width + 15vw);
+	width: calc($content-width - 10vw);
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,8 @@ nav {
 
 	.menu {
 		display: flex;
-		flex-direction: column;
+		gap: 2rem;
+		// flex-direction: column;
 
 		span {
 			display: flex;
@@ -31,10 +32,10 @@ nav {
 			a {
 				margin-bottom: clamp(0.2rem, 0.5vw, 0.5rem);
 				color: $primary-color-50;
-				font-size: clamp(0.5rem, 1vw, 1rem);
-				font-weight: bold;
+				font-family: "IBM Mono";
+				font-size: clamp(0.5rem, 1.5vw, 1.2rem);
 				text-decoration: none;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				transition: color 0.2s ease-in;
 				pointer-events: auto;
 				&:hover {

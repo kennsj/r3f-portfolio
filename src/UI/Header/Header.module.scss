@@ -4,16 +4,34 @@
 	position: relative;
 	left: $content-margin;
 	width: $content-width;
-	height: 100vh;
-	height: 100dvh;
+	height: 70vh;
+	height: 70dvh;
 	display: grid;
 	align-items: center;
 
 	h1 {
 		font-size: 9rem;
-		@include media(">=phone", "<tablet") {
-			font-size: clamp(1rem, 1vw + 5rem, 5rem);
+		@include media("<tablet") {
+			font-size: clamp(1rem, 1vw + 5rem, 3rem);
 		}
+	}
+}
+
+.intro {
+	width: 50%;
+	margin: 0 auto;
+
+	.header__title {
+		color: $secondary-color;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.header__subtitle {
+		color: $primary-color;
+		font-family: "Aeonik";
+		font-size: 1.5rem;
+		font-weight: 300;
 	}
 }
 
@@ -26,8 +44,8 @@
 		width: $content-width-mobile;
 	}
 
-	h1 {
-		width: 80%;
+	h2 {
+		// width: 80%;
 		@include media(">=phone", "<tablet") {
 			left: $content-margin-mobile;
 			width: $content-width-mobile;

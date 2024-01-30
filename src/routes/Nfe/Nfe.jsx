@@ -1,6 +1,7 @@
 import { Scroll, ScrollControls } from "@react-three/drei"
 import React from "react"
 import styles from "./Nfe.module.scss"
+import Footer from "../../UI/Footer/Footer"
 // import Workpage from "../Work/Workpage.module.scss"
 
 const Nfe = (props) => {
@@ -34,7 +35,7 @@ const Nfe = (props) => {
 					<main className={styles.work__main}>
 						<img src='./img/work-preview-folkeeventyr.png' alt='' />
 					</main>
-					<footer></footer>
+					<Footer />
 				</Scroll>
 			</ScrollControls>
 		</>

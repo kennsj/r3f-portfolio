@@ -15,7 +15,6 @@ html,
 body {
 	background: transparent;
 	color: $primary-color;
-	font-family: "Whyte Inktrap", "Raleway", sans-serif;
 	overflow-x: hidden;
 	background: #101010;
 }
@@ -30,4 +29,22 @@ canvas {
 	height: 100vh;
 	z-index: -1;
 	overflow: hidden;
+}
+
+.main_test {
+	width: 100%;
+	left: 0;
+	position: absolute;
+	pointer-events: none;
+	height: 500vh;
+	// background: red;
+	// backdrop-filter: invert(10%);
+
+	a {
+		pointer-events: all;
+	}
+}
+
+.testing {
+	// background: red;
 }

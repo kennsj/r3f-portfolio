@@ -1,0 +1,33 @@
+@import "../_variables";
+
+.about__section {
+	position: relative;
+	width: 80vw;
+	// height: 150dvh;
+	padding-left: 15vw;
+	padding-top: 10vh;
+	// background: $primary-color;
+
+	z-index: -1;
+
+	mix-blend-mode: exclusion;
+	// background-blend-mode: exclusion;
+	// opacity: 0.3;
+	// color: black;
+
+	p {
+		font-size: 0.9rem;
+		width: 30rem;
+	}
+
+	.about__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 3rem 0;
+		border-bottom: 1px solid $primary-color-50;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
